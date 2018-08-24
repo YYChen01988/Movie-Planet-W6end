@@ -1,0 +1,24 @@
+#content{
+  padding: 2px;
+}
+
+#form-detail-title{
+  display: flex;
+  padding-top: 15px;
+}
+
+#form-detail-genre{
+  display: flex;
+  padding-top: 15px;
+}
+
+#form-detail-length{
+  display: flex;
+  padding-top: 15px;
+}
+
+#form-detail-rating{
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}

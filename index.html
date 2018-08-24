@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> <h1>Movie Planet</h1></title>
+    <link rel="stylesheet" type = "text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <h2>Movie Planet</h2>
+    </div>
+
+    <form id="new-item-form">
+      <div id="content">
+        <div class="grid" id="form-detail-title">
+          <div class="cell"><lable for='title' calss="primary">Title: </lable></div>
+          <div class="cell"><input type="text" id="title" require/></div>
+        </div>
+
+        <div class="grid" id="form-detail-genre">
+          <div class="cell"><lable for='genre' calss="primary">Genre: </lable></div>
+          <div class="cell"><select id="genre">
+            <option value="" disabled selected></option>
+            <option value="Drama">Drama</option>
+            <option value="Scifi">Scifi</option>
+            <option value="Action">Action</option>
+            <option value="Horro">Horro</option>
+            <option value="Comedy">Comedy</option>
+          </select></div>
+        </div>
+
+        <div class="grid" id="form-detail-length">
+          <div class="cell"><lable for='length' calss="primary">Length: </lable></div>
+          <div class="cell"><input type="text" id="length" require/></div>
+        </div>
+
+        <div class="grid" id="form-detail-rating">
+          <div class="cell"><lable for='rating' calss="primary">Rating: </lable></div>
+          <div class="cell"><input type="number" id="rating" require/></div>
+        </div>
+
+      </div>
+      <input type="submit" value="save">
+    </form>
+    <h2>Movie List</h2>
+    <div id="movie-list">
+
+    </div>
+
+    <input id="delete_all" type="submit" value="delete all"/>
+
+  </body>
+</html>
