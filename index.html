@@ -8,18 +8,18 @@
   </head>
   <body>
     <div id="header">
-      <h2>Movie Planet</h2>
+      <h1>Movie Planet</h1>
     </div>
 
     <form id="new-item-form">
       <div id="content">
         <div class="grid" id="form-detail-title">
-          <div class="cell"><lable for='title' calss="primary">Title: </lable></div>
+          <div class="cell"><label for='title' calss="primary">Title: </label></div>
           <div class="cell"><input type="text" id="title" require/></div>
         </div>
 
         <div class="grid" id="form-detail-genre">
-          <div class="cell"><lable for='genre' calss="primary">Genre: </lable></div>
+          <div class="cell"><label for='genre' calss="primary">Genre: </label></div>
           <div class="cell"><select id="genre">
             <option value="" disabled selected></option>
             <option value="Drama">Drama</option>
@@ -31,24 +31,23 @@
         </div>
 
         <div class="grid" id="form-detail-length">
-          <div class="cell"><lable for='length' calss="primary">Length: </lable></div>
+          <div class="cell"><label for='length' calss="primary">Length: </label></div>
           <div class="cell"><input type="text" id="length" require/></div>
         </div>
 
         <div class="grid" id="form-detail-rating">
-          <div class="cell"><lable for='rating' calss="primary">Rating: </lable></div>
+          <div class="cell"><label for='rating' calss="primary">Rating: </label></div>
           <div class="cell"><input type="number" id="rating" require/></div>
         </div>
 
+        <input type="submit" value="save">
+
       </div>
-      <input type="submit" value="save">
     </form>
+
     <h2>Movie List</h2>
     <div id="movie-list">
-
     </div>
-
     <input id="delete_all" type="submit" value="delete all"/>
-
   </body>
 </html>

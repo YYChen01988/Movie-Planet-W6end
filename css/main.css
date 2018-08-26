@@ -1,10 +1,27 @@
+body{
+  background-color: #dbdbd9;
+}
+
+h1{
+
+}
+
+h2{
+  /* background-color: #f5d9f7; */
+  padding-top: 15px;
+  padding-bottom: 25px;
+  /* text-align: center; */
+}
+
 #content{
   padding: 2px;
+  background-color: #d3e8d6;
 }
 
 #form-detail-title{
   display: flex;
   padding-top: 15px;
+  margin: 5px 0;
 }
 
 #form-detail-genre{
@@ -22,3 +39,35 @@
   padding-top: 15px;
   padding-bottom: 25px;
 }
+
+#movie-list{
+  display: flex;
+  flex-direction: column;
+
+  background-color: #d7def7;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  margin: auto;
+
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* .cell {
+  padding: 10px;
+  text-align: center;
+} */

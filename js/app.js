@@ -41,27 +41,26 @@ const renderList = function(){
   movieDiv.innerHTML = "";
 
   const movieList = JSON.parse(localStorage.getItem('movies'));
-  movieList.forEach((movie) => {
-    const movieUl = document.createElement('ul');
-    const titleLi = document.createElement('li');
-    titleLi.textContent = `Title: ${movie.title}`;
-
-    const genreLi = document.createElement('li');
-    genreLi.textContent = `Genre: ${movie.genre}`;
-
-    const lengthLi = document.createElement('li');
-    lengthLi.textContent = `Length: ${movie.length}`;
-
-    const ratingLi = document.createElement('li');
-    ratingLi.textContent = `Rating: ${movie.rating}`;
-
-    movieUl.appendChild(titleLi);
-    movieUl.appendChild(genreLi);
-    movieUl.appendChild(lengthLi);
-    movieUl.appendChild(ratingLi);
-
-    movieDiv.appendChild(movieUl);
+  const movieTable = document.createElement('table');
+  var movieTr = document.createElement('tr');
+  movieTable.appendChild(movieTr);
+  Object.keys(movieList[0]).forEach((title) => {
+    const movieTh = document.createElement('th');
+    movieTh.textContent = title;
+    movieTr.appendChild(movieTh);
   })
+
+  movieList.forEach((movie) => {
+    movieTr = document.createElement('tr');
+    movieTable.appendChild(movieTr);
+    Object.keys(movie).forEach((movieProperty) => {
+      const movieTd = document.createElement('td');
+      movieTd.textContent = movie[movieProperty];
+      movieTr.appendChild(movieTd);
+    })
+  })
+  movieDiv.appendChild(movieTable);
+
 }
 
 const deleteAll = function(event){
@@ -69,5 +68,6 @@ const deleteAll = function(event){
   while (list.firstChild) {
     list.removeChild(list.firstChild);
   };
-  return movieList=[];
+  localStorage.clear();
+  movieList = [];
 }
