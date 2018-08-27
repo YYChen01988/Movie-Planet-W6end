@@ -7,35 +7,48 @@
     <script src="js/app.js"></script>
   </head>
   <body>
+    <div id="container">
+
     <div id="header">
       <h1>Movie Planet</h1>
     </div>
 
     <form id="new-item-form">
-      <div id="content">
-        <div class="grid" id="form-detail-title">
+      <div class = 'grid'id="content" >
+        <div class="grid-row" id="form-detail-title" >
           <div class="cell"><label for='title' calss="primary">Title: </label></div>
           <div class="cell"><input type="text" id="title" require/></div>
         </div>
 
-        <div class="grid" id="form-detail-genre">
+        <div class="grid-row" id="form-detail-genre">
           <div class="cell"><label for='genre' calss="primary">Genre: </label></div>
-          <div class="cell"><select id="genre">
+          <!-- <div class="cell"><select id="genre">
             <option value="" disabled selected></option>
             <option value="Drama">Drama</option>
             <option value="Scifi">Scifi</option>
             <option value="Action">Action</option>
             <option value="Horro">Horro</option>
             <option value="Comedy">Comedy</option>
-          </select></div>
+          </select></div> -->
+
+          <input id="drama" name="genre" type="radio" value="Drama" >
+          <label for="drama">Drama</label>
+          <input id="Scifi" name="genre" type="radio" value="Scifi">
+          <label for="Scifi">Scifi</label>
+          <input id="Action" name="genre" type="radio" value="Action">
+          <label for="Action">Action</label>
+          <input id="Horro" name="genre" type="radio" value="Horro">
+          <label for="Horro">Horro</label>
+          <input id="Comedy" name="genre" type="radio" value="Comedy">
+          <label for="Comedy">Comedy</label>
         </div>
 
-        <div class="grid" id="form-detail-length">
+        <div class="grid-row" id="form-detail-length">
           <div class="cell"><label for='length' calss="primary">Length: </label></div>
           <div class="cell"><input type="text" id="length" require/></div>
         </div>
 
-        <div class="grid" id="form-detail-rating">
+        <div class="grid-row" id="form-detail-rating">
           <div class="cell"><label for='rating' calss="primary">Rating: </label></div>
           <div class="cell"><input type="number" id="rating" require/></div>
         </div>
@@ -49,5 +62,6 @@
     <div id="movie-list">
     </div>
     <input id="delete_all" type="submit" value="delete all"/>
+  </div>
   </body>
 </html>

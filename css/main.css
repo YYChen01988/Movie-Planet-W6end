@@ -1,24 +1,41 @@
 body{
-  background-color: #dbdbd9;
+  background-image: url("https://media.wired.com/photos/5b7350e75fc74d47846ce4e4/master/pass/Popcorn-869302844.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#container{
+  background-color: white;
+  width: 620px;
+  border-radius: 20px 20px 20px 20px;
+  padding: 10px;
 }
 
 h1{
+  padding-left: 10px;
+  display: flex;
 
 }
 
 h2{
+  display: flex;
   /* background-color: #f5d9f7; */
-  padding-top: 15px;
-  padding-bottom: 25px;
-  /* text-align: center; */
+  /* padding-bottom: 25px; */
+  padding-left: 10px;
+
+  text-align: justify;
 }
+
 
 #content{
   padding: 2px;
-  background-color: #d3e8d6;
+  background-color: #dbdbd9;
+  /* width:700px; */
+  height: 165px;
+  align-content: center;
 }
 
-#form-detail-title{
+/* #form-detail-title{
   display: flex;
   padding-top: 15px;
   margin: 5px 0;
@@ -38,14 +55,14 @@ h2{
   display: flex;
   padding-top: 15px;
   padding-bottom: 25px;
-}
+}*/
 
 #movie-list{
   display: flex;
   flex-direction: column;
 
-  background-color: #d7def7;
-  padding-top: 15px;
+  /* background-color: #d7def7; */
+  padding-left: 5px;
   padding-bottom: 25px;
   margin: auto;
 
@@ -53,6 +70,7 @@ h2{
 table {
     border-collapse: collapse;
     width: 100%;
+    
 }
 
 th, td {
@@ -67,7 +85,21 @@ th {
     color: white;
 }
 
-/* .cell {
-  padding: 10px;
-  text-align: center;
-} */
+.grid-row{
+  display: flex;
+}
+
+.cell {
+  padding: 8px;
+  align-items: center;
+}
+
+#delete_all{
+  background-color: red;
+  color: white;
+  font-family: Arial;
+  /* align-items: center; */
+  border-radius: 10px 10px 10px 10px;
+  padding-left: 10px;
+
+}
